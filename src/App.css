@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -29,4 +24,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.ValueBox {
+  background-color: #33D4FF;
+  text-align: center;
+}
+
+.ResultBox {
+  background-color: #ffb3b3;
+}
+
+.BoxesInMiddle {
+  width: 66.66%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 400px;
+}
+
+.SpaceBetweenBox {
+  top: 10;
+}
+
+.InputLine {
+  margin-top: 32px;
+  width: 60px;
+}
+
+.ResultBoxText {
+  margin-top: 13px;
 }

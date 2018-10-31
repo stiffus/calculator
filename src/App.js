@@ -1,28 +1,46 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Row } from "reactstrap";
+import ValueBox from './components/ValueBox';
+import ResultBox from './components/ResultBox';
+import "./App.css";
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+      this.state = {
+        value1: "",
+        value2: "",
+        value3: ""
+      };
+  }
+
   render() {
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <Row className="form-group">
+        <div className="BoxesInMiddle container-fluid">
+        <div className="row">
+          <div className="col-12  col-sm">
+            <ValueBox name="Value 1:" parentState={(value1) => this.setState({value1})}/>
+          </div>
+          <div className="col-12  col-sm">
+            <ValueBox name="Value 2:" parentState={(value2) => this.setState({value2})}/>
+          </div>
+          <div className="col-12  col-sm">
+            <ValueBox name="Value 3:" parentState={(value3) => this.setState({value3})}/>
+          </div>
+          <div className="col-12  col-sm">
+            <ResultBox parentStateValues={this.state}/>
+          </div>
+          </div>
+          </div>
+        </Row>
+        </div>
     );
   }
+
 }
 
 export default App;
