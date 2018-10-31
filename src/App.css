@@ -48,9 +48,14 @@
 
 .InputLine {
   margin-top: 32px;
-  width: 60px;
+  width: 50px;
 }
 
 .ResultBoxText {
   margin-top: 13px;
+}
+
+.BoxSize {
+  margin-top: 30px;
+  height: 140px;
 }
