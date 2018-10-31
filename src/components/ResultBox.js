@@ -24,11 +24,11 @@ class ResultBox extends Component {
               checked={this.state.radioButton === "Sum"}
               onChange={this.setRadioButton}
             />
-            <label class="form-check-label" for="result">
+            <label className="form-check-label" htmlFor="result">
               Sum
             </label>
           </div>
-          <div class="form-check">
+          <div className="form-check">
             <input
               type="radio"
               value="Multiply"
@@ -36,7 +36,7 @@ class ResultBox extends Component {
               checked={this.state.radioButton === "Multiply"}
               onChange={this.setRadioButton}
             />
-            <label class="form-check-label" for="result">
+            <label className="form-check-label" htmlFor="result">
               Multiply
             </label>
               <p>Result: {this.state.result}</p>

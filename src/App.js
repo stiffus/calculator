@@ -23,16 +23,16 @@ class App extends Component {
         <Row className="form-group">
         <div className="BoxesInMiddle">
         <div className="row">
-          <div className="BoxSize col-12  col-sm">
+          <div className="BoxSize col-sm">
             <ValueBox name="Value 1:" parentState={(value1) => this.setState({value1})}/>
           </div>
-          <div className="BoxSize col-12  col-sm">
+          <div className="BoxSize col-sm">
             <ValueBox name="Value 2:" parentState={(value2) => this.setState({value2})}/>
           </div>
-          <div className="BoxSize col-12  col-sm">
+          <div className="BoxSize col-sm">
             <ValueBox name="Value 3:" parentState={(value3) => this.setState({value3})}/>
           </div>
-          <div className="BoxSize col-12  col-sm">
+          <div className="BoxSize col-sm">
             <ResultBox parentStateValues={this.state}/>
           </div>
           </div>
